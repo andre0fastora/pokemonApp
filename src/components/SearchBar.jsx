@@ -12,10 +12,10 @@ const SearchBar = ({ searchTerm, setSearchTerm, setPokemonToDisplay }) => {
           setPokemonToDisplay(data);
         }}
       >
-        <label>Search</label>
+        <label>Search by name or ID</label>
         <input
           onChange={(e) => {
-            setSearchTerm(e.target.value);
+            setSearchTerm(e.target.value.toLowerCase());
           }}
           type={"text"}
         />
