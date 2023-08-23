@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { SearchBar, PokemonDisplay } from "./";
+import { SearchBar, PokemonDisplay, Sidebar } from "./";
+
 
 const Home = ({ setPokemonToDisplay, pokemonToDisplay, team, setTeam }) => {
   const [searchTerm, setSearchTerm] = useState();
@@ -12,6 +13,10 @@ const Home = ({ setPokemonToDisplay, pokemonToDisplay, team, setTeam }) => {
         setSearchTerm={setSearchTerm}
         setPokemonToDisplay={setPokemonToDisplay}
       />
+      <div className="flex-row">
+      
+      <Sidebar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+      <div id="pokemonHolderHolder">
       {pokemonToDisplay ? (
         <>
           <PokemonDisplay pokemonToDisplay={pokemonToDisplay} />
@@ -27,6 +32,9 @@ const Home = ({ setPokemonToDisplay, pokemonToDisplay, team, setTeam }) => {
           </button>
         </>
       ) : null}
+      
+    </div>
+    </div>
     </>
   );
 };

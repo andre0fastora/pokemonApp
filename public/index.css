@@ -24,6 +24,12 @@ body {
   align-items: center;
 }
 
+#pokemonHolderHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #pokemonHolder img {
   height: 300px;
   width: 300px;

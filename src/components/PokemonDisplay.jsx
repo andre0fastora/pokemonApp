@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const PokemonDisplay = ({ pokemonToDisplay }) => {
+const PokemonDisplay = ({ pokemonToDisplay, team, setTeam }) => {
   return (
     <div id="pokemonHolder">
       <h1>{pokemonToDisplay?.name}</h1>
@@ -17,7 +17,9 @@ const PokemonDisplay = ({ pokemonToDisplay }) => {
               {stat.stat.name}: {stat.base_stat}
             </p>
           );
+          
         })}
+      
       </div>
     </div>
   );

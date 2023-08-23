@@ -10,10 +10,12 @@ const SearchBar = ({ searchTerm, setSearchTerm, setPokemonToDisplay }) => {
           const data = await getPokemon(searchTerm);
           console.log(data);
           setPokemonToDisplay(data);
+          setSearchTerm("");
         }}
       >
         <label>Search by name or ID</label>
         <input
+        value = {searchTerm}
           onChange={(e) => {
             setSearchTerm(e.target.value.toLowerCase());
           }}

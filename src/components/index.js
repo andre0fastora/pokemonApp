@@ -4,3 +4,4 @@ export { default as Home } from "./Home";
 export { default as SearchBar } from "./SearchBar";
 export { default as PokemonDisplay } from "./PokemonDisplay";
 export { default as Team } from "./Team";
+export {default as Sidebar} from "./Sidebar"

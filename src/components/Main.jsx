@@ -10,7 +10,7 @@ const Main = () => {
     if (localStorage.getItem("team")) {
       setTeam(JSON.parse(localStorage.getItem("team")));
     }
-  });
+  }, []);
 
   return (
     <div id="main">
