@@ -27,6 +27,17 @@ const pokemonList = [
     "arbok",
     "pikachu",
     "raichu",
+    "sandshrew",
+    "sandslash",
+    "nidoran-f",
+    "nidorina",
+    "nidoqueen",
+    "nidoran-m",
+    "nidorino",
+    "nidoking",
+    
+
+
 
 
 ]
