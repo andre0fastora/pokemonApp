@@ -5,7 +5,7 @@ const Team = ({ team, setTeam }) => {
   return (
     <>
       <h1>Your Team</h1>
-      <div className="flex-row">
+      <div className="flex-row" id="teamHolder">
         {team.map((pokemon, idx) => {
           return (
             <>

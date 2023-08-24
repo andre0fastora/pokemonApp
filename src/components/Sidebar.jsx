@@ -44,14 +44,20 @@ const pokemonList = [
 
 const Sidebar = ({searchTerm, setSearchTerm}) => {
     
-    const filteredPokemonArray = pokemonList.filter((pokemon) => {
-        return pokemon.includes(searchTerm);
-    })
+
+    let filteredPokemonArray = pokemonList;
+
+    if (searchTerm) {
+        filteredPokemonArray = pokemonList.filter((pokemon) => {
+            return pokemon.includes(searchTerm);
+        })
+
+    }
     
     
     return (
 
-        <div>
+        <div id="sidebar">
         {filteredPokemonArray.map((pokemon) => {
             return  <p onClick={() => setSearchTerm(pokemon)}>{pokemon}</p>
         })}

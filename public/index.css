@@ -22,17 +22,34 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(196, 149, 240);
+  border-radius: 5%;
+  box-shadow: 2px 2px 2px black;
+  margin-bottom: 25px;
+  
+  
 }
 
 #pokemonHolderHolder {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 25px;
+  margin-top: 25px;
 }
 
 #pokemonHolder img {
   height: 300px;
   width: 300px;
+}
+
+#sidebar {
+  background-color: azure;
+  padding: 3%;
+}
+
+#teamHolder {
+  justify-content: space-around;
 }
 
 .flex-row {
